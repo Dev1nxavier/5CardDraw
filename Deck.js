@@ -12,7 +12,7 @@ class Deck {
     const suits = ["Hearts", "Diamonds", "Clubs", "Spades"];
 
     const values = ['Ace',2,3,4,5,6,7,8,9,'T','J','Q','K'];
-    
+
         //Create cards and add to deck array
     for(const val of values){
         for(const suit of suits){
@@ -41,15 +41,14 @@ class Deck {
     }
 
     dealCard(){
-        this.length = this.deck.length;
-        //return a random card from deck;
-        let randomIndex = Math.floor(Math.random()*this.length);
+        //deal from top
+       if(this.deck.length<2){
+        console.log("Reshuffling...")
+        this.initDeck();
+        this.shuffle();
+       }
 
-        const randomCard = this.deck[randomIndex];
-        //remove dealt card from deck
-        this.deck.splice(randomIndex,1);
-        
-        return randomCard;
+       return this.deck.pop();
     }
 
 }

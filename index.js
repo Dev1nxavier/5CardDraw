@@ -20,7 +20,7 @@ function start() {
 
 
     let myHand = new CardHand(hand);
-    console.log(myHand);
+    console.log("My Hand:", myHand.hand, "has (a)",myHand.category());
 }
 
 start();
