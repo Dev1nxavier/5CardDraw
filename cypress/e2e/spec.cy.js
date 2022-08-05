@@ -75,6 +75,25 @@ describe('My computed hand tests', () => {
     expect(hand.category()).to.equal("Two Pair");
   })
 
+  it("Returns a hand with four of a kind to have a value = 'Four of a kind'", () => {
+    let newHand = [];
+    const card1 = new Card("Ace of Spades");
+    const card2 = new Card("Ace of Clubs");
+    const card3 = new Card("Ace of Hearts");
+    const card4 = new Card("Ace of Diamonds");
+    const card5 = new Card("5 of Clubs");
+
+    newHand.push(card1);
+    newHand.push(card2);
+    newHand.push(card3);
+    newHand.push(card4);
+    newHand.push(card5);
+
+    let hand = new CardHand(newHand);
+
+    expect(hand.category()).to.equal("Four of a Kind");
+  })
+
 })
 
 describe('Unit tests for return category values', ()=>{
