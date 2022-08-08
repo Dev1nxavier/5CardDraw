@@ -17,7 +17,7 @@ The program creates a standard deck of 52 playing cards. The deck is shuffled an
 
 ## Assumptions
 - The program assumes Ace can be either a 1 (lowest card) or 14 (highest card).
-- A standard set of 4 suits and card values of 2,3,4,5,6,7,8,9,J,Q,K,A was used. Cards are assigned values equal to their face value (if an integer) or 11,12,13,14 for J,Q,K,A respectively.    
+- A standard set of 4 suits and card values of 2,3,4,5,6,7,8,9,T,J,Q,K,A was used. Cards are assigned values equal to their face value (if an integer) or 11,12,13,14 for J,Q,K,A respectively.    
 
 ## Initiating the Program  
 1. npm i
