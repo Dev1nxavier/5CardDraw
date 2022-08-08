@@ -20,8 +20,9 @@ The program creates a standard deck of 52 playing cards. The deck is shuffled an
 - A standard set of 4 suits and card values of 2,3,4,5,6,7,8,9,T,J,Q,K,A was used. Cards are assigned values equal to their face value (if an integer) or 11,12,13,14 for J,Q,K,A respectively.    
 
 ## Initiating the Program  
-1. npm i
-2. In the console type: node index.js or npm start;
+1. Clone the repository: https://github.com/Dev1nxavier/5CardDraw.git
+2. npm i
+3. In the console type: node index.js or npm start;
 
 ## Testing  
 Unit tests are written with Cypress.io. The program is distributed with a series of tests which include:

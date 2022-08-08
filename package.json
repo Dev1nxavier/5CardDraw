@@ -1,7 +1,6 @@
 {
   "name": "5cardmonty",
   "version": "1.0.0",
-  "type": "module",
   "description": "5-card poker game. Player receives 5 random cards from a standard playing deck. The program than calculates the value of the player's hand. ",
   "main": "index.js",
   "scripts": {
